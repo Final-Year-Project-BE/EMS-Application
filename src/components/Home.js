@@ -2,11 +2,10 @@ import React from "react";
 import { Container, Image } from "react-bootstrap";
 import Header from "./adminHeader";
 import Court from "./images/court.jpg"
-const Home = () => {
+function Home () {
     return (
 
         <div>
-            <Header />
             <Container>
                 <h1 className="mt-5">Digital Evidence Management System.</h1>
                 <img

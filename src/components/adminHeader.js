@@ -1,23 +1,43 @@
-import React, { useEffect } from 'react'
-import { Container, Nav, Navbar, NavDropdown, Button, Dropdown } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
-import { connect } from 'react-redux';
-import { store } from 'react-notifications-component';
+import React from "react";
+import { NavbarText, UncontrolledDropdown, DropdownToggle, Navbar, DropdownItem, DropdownMenu, Collapse, Nav, NavbarBrand, NavbarToggler, NavItem, NavLink, Container } from 'reactstrap';
+const adminHeader = () => {
+  return (
+    <div>
+      <Navbar
+        color="dark"
+        expand="md"
+        dark
+      >
+        <NavbarBrand href="/">
+          EMS
+        </NavbarBrand>
+        <NavbarToggler onClick={function noRefCheck() { }} />
+        <Collapse navbar>
+          <Nav
+            className="me-auto"
+            navbar
+          >
+            <NavItem>
+              <NavLink className="nav-link active" href="/registeradmin">
+                register Admin
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink className="nav-link active" href="/registerevidence">
+                register Evidence
+              </NavLink>
+            </NavItem>
+          </Nav>
+          <NavbarText>
+            <NavLink href="/components/">
+              Logout
+            </NavLink>
 
-const Header = (props) => {
-
-    return (
-        <Navbar bg="dark" expand="lg">
-            <Navbar.Brand href="#home"><h3 className="text-white">EMS</h3></Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="mr-auto">
-                    <Nav.Link className="text-white" href="#link">Login</Nav.Link>
-                    <Nav.Link className="text-white float-right" href="#link">Register Evidence</Nav.Link>
-                </Nav>
-            </Navbar.Collapse>
-        </Navbar>
-    );
+          </NavbarText>
+        </Collapse>
+      </Navbar>
+    </div>
+  )
 }
 
-export default Header;
+export default adminHeader;

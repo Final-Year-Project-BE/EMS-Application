@@ -3,22 +3,21 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import Home from "./components/Home"
-import registerAdmin from "./components/registerAdmin"
-import registerEvidence from "./components/registerEvidence"
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import RegisterAdmin from "./components/registerAdmin"
+import RegisterEvidence from "./components/registerEvidence"
+import Header from "./components/adminHeader"
+import { Routes, Route } from "react-router-dom";
+
 function App() {
   return (
     <div className="App">
-      
-      <BrowserRouter>
-      <Switch>
-        <Route path="/" exact component={Home}></Route>
-        <Route path="/registerAdmin" exact component={registerAdmin}></Route>
-        <Route path="/registerEvidence" exact component={registerEvidence}></Route>
-      </Switch>
-      </BrowserRouter>
+      < Header />
+      <Routes>
+        <Route path="/" element={ < Home /> } />
+        <Route path="registeradmin" element={ < RegisterAdmin /> } />
+        <Route path="registerevidence" element={ < RegisterEvidence /> } />
+      </Routes>
 
-      <Home />
     </div>
   );
 }

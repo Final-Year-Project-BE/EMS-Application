@@ -1,21 +1,12 @@
 import React from "react";
-import { Container, Image } from "react-bootstrap";
-import Header from "./adminHeader";
+import { Button } from "reactstrap";
 
-const registerAdmin = () => {
+const RegisterAdmin = () => {
     return (
-
         <div>
-            <Header />
-            <Container>
-                <h1 className="mt-5">Register Admin.</h1>
-                
-            </Container>
-
+           <h1 className="mt-5">Register Admin</h1>
         </div>
-
-
     )
 }
 
-export default registerAdmin;
+export default RegisterAdmin;
