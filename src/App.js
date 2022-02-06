@@ -5,9 +5,9 @@ import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import Home from "./components/Home"
 import RegisterAdmin from "./components/registerAdmin"
 import RegisterEvidence from "./components/registerEvidence"
-import Header from "./components/adminHeader"
+import Header from "./components/Headers/adminHeader"
 import { Routes, Route } from "react-router-dom";
-
+import Loginpage from './components/Login/loginPage'
 function App() {
   return (
     <div className="App">
@@ -16,6 +16,7 @@ function App() {
         <Route path="/" element={ < Home /> } />
         <Route path="registeradmin" element={ < RegisterAdmin /> } />
         <Route path="registerevidence" element={ < RegisterEvidence /> } />
+        <Route path="login" element={ < Loginpage /> } />
       </Routes>
 
     </div>

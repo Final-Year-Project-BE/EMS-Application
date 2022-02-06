@@ -1,5 +1,5 @@
 import React from "react";
-import { NavbarText, UncontrolledDropdown, DropdownToggle, Navbar, DropdownItem, DropdownMenu, Collapse, Nav, NavbarBrand, NavbarToggler, NavItem, NavLink, Container } from 'reactstrap';
+import { NavbarText, UncontrolledDropdown, DropdownToggle, Button, Navbar, DropdownItem, DropdownMenu, Collapse, Nav, NavbarBrand, NavbarToggler, NavItem, NavLink, Container } from 'reactstrap';
 const adminHeader = () => {
   return (
     <div>
@@ -19,20 +19,26 @@ const adminHeader = () => {
           >
             <NavItem>
               <NavLink className="nav-link active" href="/registeradmin">
-                register Admin
+                Cases
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink className="nav-link active" href="/registerevidence">
-                register Evidence
+                Verifications
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink className="nav-link active" href="/registerevidence">
+                About us
               </NavLink>
             </NavItem>
           </Nav>
           <NavbarText>
-            <NavLink href="/components/">
-              Logout
-            </NavLink>
-
+            <button type="button" class="btn btn-outline-success btn-sm">
+              <NavLink className="nav-link active" href="/login">
+                <span>Login</span>
+              </NavLink>
+            </button>
           </NavbarText>
         </Collapse>
       </Navbar>

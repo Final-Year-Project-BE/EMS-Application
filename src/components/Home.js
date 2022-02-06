@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Image } from "react-bootstrap";
-import Header from "./adminHeader";
+import Header from "./Headers/adminHeader";
 import Court from "./images/court.jpg"
 function Home () {
     return (
