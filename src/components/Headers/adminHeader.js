@@ -1,5 +1,6 @@
 import React from "react";
-import { NavbarText, UncontrolledDropdown, DropdownToggle, Button, Navbar, DropdownItem, DropdownMenu, Collapse, Nav, NavbarBrand, NavbarToggler, NavItem, NavLink, Container } from 'reactstrap';
+import { NavbarText, Navbar, DropdownItem, DropdownMenu, Collapse, Nav, NavbarBrand, NavbarToggler, NavItem, NavLink, Container } from 'reactstrap';
+
 const adminHeader = () => {
   return (
     <div>
@@ -18,7 +19,7 @@ const adminHeader = () => {
             navbar
           >
             <NavItem>
-              <NavLink className="nav-link active" href="/registeradmin">
+              <NavLink className="nav-link active" href="/cases">
                 Cases
               </NavLink>
             </NavItem>

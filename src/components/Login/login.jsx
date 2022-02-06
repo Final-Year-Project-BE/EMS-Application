@@ -17,8 +17,8 @@ const Login = () => {
   const [password1,setPassword1] = useState("")
   return (
     <Container fluid>
-      <Row className="justify-content-md-center">
-        <Col className='col-md-5 mt-3' >
+      <Row className="justify-content-md-center col-md-3 col-sm-3">
+        <Col className='col-md-3 col-sm-3 mt-3' >
         <FadeTransform
             in
             transformProps={{
